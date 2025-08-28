@@ -146,10 +146,9 @@ Now, inside your academy repository, you should see the following top-level fold
  categories: "cloud"
  level: "beginner"
  badge: 
-    png: "https://images.credly.com/images/f28f1d88-428a-47f6-95b5-7da1dd6c1000/twitter_thumb_201604_KCNA_badge.png"
-    svg: "https://images.credly.com/images/f28f1d88-428a-47f6-95b5-7da1dd6c1000/twitter_thumb_201604_KCNA_badge.png"
-    title: "Layer5 Certified"
-    description: "Earn the Certification badge to showcase your expertise in Layer5 cloud services."
+  title: "Layer5 Certified"
+  description: "Earn the Certification badge to showcase your expertise in Layer5 cloud services."
+  image_url: "https://images.credly.com/images/f28f1d88-428a-47f6-95b5-7da1dd6c1000/twitter_thumb_201604_KCNA_badge.png"
  ---
  ```
 
@@ -182,12 +181,11 @@ Now, inside your academy repository, you should see the following top-level fold
  | All                           | `draft`       |    -    | If `true`, the page will not be published.                                                                    |
  | All                           | `type`        |    ✅     | Defines the content's role. Optional values: `challenge`, `learning-path`, `certification`, `course`, `module`, `page`, `test`, or `lab`. |
  | **Learning Path** | `id`          |    ✅     | **Crucial.** A stable UUID for tracking progress. **Do not change.**                                    |
- | **Learning Path** | `badge` | - | Defines the awarded digital badge. The png and svg fields accept either a full remote URL or a local file path for an image in the same folder (e.g., layer5-badge.svg).|
+ | **Learning Path** | `badge` | - | Defines the awarded digital badge. The object contains title, description, and image_url. The image_url field accepts a full remote URL or a local file path for an image in the same folder (e.g., layer5-badge.svg). |
  | **Learning Path**, **Course** | `level`       |    -    | A string for the intended difficulty (`beginner`, `intermediate`, `advanced`). Default: `beginner`. |
  | **Learning Path**, **Course** | `banner`      |    -    | Path to a banner image located in the same folder (Page Bundle). |
  | **Learning Path**, **Course**, **module** | `tags`        |    -    | Keywords for content discovery. Multiple tags can be selected.                                                |
  | **Learning Path**, **Course**, **module** | `categories`  |    -    | The main categories for the content. Only one can be selected.                                                |
-
 
 > For a complete list of all predefined variables and advanced usage, please refer to the official [Hugo Front Matter documentation](https://gohugo.io/content-management/front-matter/).
 
